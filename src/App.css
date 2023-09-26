@@ -1,0 +1,208 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+nav h1 {
+  color: #ff5d5d;
+  font-size: 3vw;
+}
+.link-nav {
+  display: flex;
+  
+}
+.link-nav p  {
+margin-left: 1vw;
+  
+}
+
+.page-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headerPageText {
+  margin-top: 3vw;
+  color: #fdfdfd;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  height: 12vw;
+  width: 79vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -18rem;
+  border-radius: 1rem;
+  filter: contrast(0.9);
+}
+.headerPageText h1 {
+  font-weight: 400;
+  font-size: 4vw;
+}
+.conteneurCard {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #f1f1f1bf;
+  border-radius: 1rem;
+  margin-top: 2vw;
+  padding: 2vw;
+}
+.card-body {
+  display: flex;
+  height: 22vw;
+  margin: 1vw;
+  width: 22vw;
+  background-size: cover;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 1px 0px 7px 0px rgb(0 0 0 / 32%);
+}
+.p-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3vw;
+  color: #fdfdfd;
+  text-align: initial;
+  padding: 0.5vw;
+  background: #ff5d5d;
+}
+.p-card p {
+  font-size: 1vw;
+}
+
+.page-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff5d5d;
+}
+.image-presentation {
+  height: 28vw;
+  width: 80vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+}
+.location-info-conteneur {
+  margin-top: 1vw;
+  width: 80vw;
+}
+.conteneur-div-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.conteneur-info-left {
+}
+.title-location {
+}
+.localisation-location {
+  margin-bottom: 1vw;
+}
+.tags {
+  padding-top: 0.3vw;
+  padding-bottom: 0.3vw;
+  padding-left: 1.6vw;
+  padding-right: 1.6vw;
+  border-radius: 8px;
+  margin-right: 1vw;
+  background-color: #e63d3d;
+  color: #fdfdfd;
+}
+.titanic{
+  float: none;
+}
+.conteneur-info-right {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.host-conteneur {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.host-conteneur p {
+  max-width: 40%;
+  text-align: end;
+}
+.host-conteneur img {
+  max-width: 5vw;
+  border-radius: 5rem;
+}
+.host-location {
+}
+.rate-location {
+}
+.conteneur-menu-location {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-deroulant-conteneur {
+  width: 40%;
+
+  border-radius: 0.7rem;
+}
+.head-menu-deroulant {
+  display: flex;
+  justify-content: space-between;
+  color: #fdfdfd;
+  border-radius: 0.7rem;
+  background-color: #e63d3d;
+  padding: 0.8vw;
+}
+.content-description {
+  display: none;
+  padding: 1vw;
+  list-style-type: none;
+  display: block;
+  background-color: #efefef;
+}
+.content-description li {
+  list-style-type: none;
+  display: block;
+}
+
+/* Dans votre fichier CSS ou balise <style> */
+.menu-deroulant-conteneur .head-menu-deroulant img {
+  transition: transform 0.3s ease-in-out; /* Transition de 0.3 seconde avec une accélération douce */
+}
+
+.menu-deroulant-conteneur .head-menu-deroulant img.clicked {
+  transform: rotate(
+    90deg
+  ); /* Rotation de l'image à 180 degrés lorsque l'état "clicked" est activé */
+}
+
+/* Dans votre fichier CSS ou balise <style> */
+.menu-deroulant-conteneur .content-description {
+  display: none; /* Caché par défaut */
+  opacity: 0; /* Opacité initiale à 0 */
+  transition: opacity 0.3s ease-in-out; /* Transition de 0.3 seconde avec une accélération douce */
+}
+
+.menu-deroulant-conteneur .content-description.visible {
+  display: block; /* Affichage de la description lorsque la classe "visible" est activée */
+  opacity: 1; /* Opacité à 1 pour afficher la description */
+}
+.conteneur-faq{
+  margin-top: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conteneur-faq .menu-deroulant-conteneur{
+ width: 80%;
+ margin-bottom: 1vw;
+}
