@@ -4,6 +4,7 @@ import locations from "../api/kasa.json";
 import { useEffect, useState } from "react";
 import Rating from "../components/rating";
 import MenuDeroulant from "../components/menuDeroulant";
+import Carousel from "../components/carousel";
 
 export function LocationPage() {
   const { id } = useParams();
@@ -33,10 +34,7 @@ export function LocationPage() {
 
   return (
     <div className="page-location">
-      <div
-        className="image-presentation"
-        style={{ backgroundImage: `url(${location.cover})` }}
-      ></div>
+         <Carousel pictures={location.pictures}></Carousel>
       <div className="location-info-conteneur">
         <div className="conteneur-div-info">
           <div className="conteneur-info-left">
